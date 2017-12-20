@@ -3,7 +3,7 @@ import {Component} from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-    <header class="center">
+    <header>
       <img src="assets/ng-books.jpg"/>
       <h2>{{title}}</h2>
     </header>
