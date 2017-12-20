@@ -8,13 +8,13 @@ export interface AppState {
 }
 
 // define the initial state
-const initState = {
+const initState: AppState = {
   showLoader: false,
   showHeader: true,
 };
 
 // handle the state
-export function appReducer(state = initState, action: AppActions) {
+export function appReducer(state: AppState = initState, action: AppActions): AppState {
 
   switch (action.type) {
 

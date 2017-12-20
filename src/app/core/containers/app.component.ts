@@ -14,7 +14,7 @@ import {AppState, selectLoading, selectHeader} from '../reducers/app.reducer';
       
       <loader *ngIf="showLoader | async"></loader>
       
-      <ng-content></ng-content>
+      <router-outlet></router-outlet>
     </div>
   `,
   styles: [`

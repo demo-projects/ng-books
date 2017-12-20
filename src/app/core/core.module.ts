@@ -1,5 +1,6 @@
 import {CommonModule} from '@angular/common';
 import {NgModule} from '@angular/core';
+import {RouterModule} from '@angular/router';
 import {StoreModule} from '@ngrx/store';
 import {StoreDevtoolsModule} from '@ngrx/store-devtools';
 import {AppComponent} from './containers/app.component';
@@ -12,6 +13,7 @@ import {appReducer} from './reducers/app.reducer';
 @NgModule({
   imports     : [
     CommonModule,
+    RouterModule,
     StoreModule.forRoot({ app: appReducer }),
     StoreDevtoolsModule.instrument()
   ],
