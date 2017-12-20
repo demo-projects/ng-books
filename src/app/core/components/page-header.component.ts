@@ -1,7 +1,7 @@
-import {Component} from '@angular/core';
+import {Component, OnInit, Input} from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'page-header',
   template: `
     <header>
       <img src="assets/ng-books.jpg"/>
@@ -13,9 +13,8 @@ import {Component} from '@angular/core';
       display: flex;
       align-items: center;
       flex-direction: column
-    }
-  `]
+    }`]
 })
-export class AppComponent {
-  title = 'Ng Books Store';
+export class PageHeaderComponent  {
+  @Input() title: string;
 }
