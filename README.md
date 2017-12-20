@@ -3,4 +3,5 @@ Angular CLI project.
 - run `npm start`
 
 Branches:
-- Master: Starter project with all the required dependencies.
+- master: Starter project with all the required dependencies.
+- 01_modules: project structure
