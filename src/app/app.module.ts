@@ -6,7 +6,8 @@ import { AppComponent } from './core/containers/app.component';
 import {CoreModule} from './core/core.module';
 
 const routes: Routes = [
-  {path: 'books', loadChildren: './features/book-browser/book-browser.module#BookBrowserModule'}
+  {path: 'books', loadChildren: './features/book-browser/book-browser.module#BookBrowserModule'},
+  {path: 'devs', loadChildren: './features/developers/developers.module#DevelopersModule'}
 ];
 
 @NgModule({
