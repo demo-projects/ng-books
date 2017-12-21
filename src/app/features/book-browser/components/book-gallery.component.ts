@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 import {Store} from '@ngrx/store';
 import {Observable} from 'rxjs/Observable';
 import {BooksState} from '../book-browser.module';
@@ -19,8 +19,8 @@ import {selectBooks} from '../reducers/books.reducer';
   styles  : [`
     .books-wrapper {
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+      flex-direction: column;
+      justify-content: space-around;
       flex-wrap: wrap
     }
     
@@ -38,5 +38,4 @@ export class BookGalleryComponent  {
   constructor(store:Store<BooksState>) {
     this.books = store.select(selectBooks);
   }
-
 }

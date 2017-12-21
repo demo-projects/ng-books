@@ -13,12 +13,12 @@ import {booksReducer} from './reducers/books.reducer';
 
 // books feature state
 export interface BooksState {
-  data: Book[];
+  items: Book[];
 };
 
 // reducer composition
 const reducers: ActionReducerMap<BooksState> = {
-  data: booksReducer
+  items: booksReducer
 };
 
 @NgModule({

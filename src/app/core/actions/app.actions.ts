@@ -2,7 +2,7 @@ import {Action} from '@ngrx/store';
 
 // define action types
 export enum AppActionTypes {
-  ToggleLoader = '[App] Show Loader',
+  ToggleLoader = '[App] Toggle Loader',
   ToggleHeader = '[App] Toggle Header'
 }
 
