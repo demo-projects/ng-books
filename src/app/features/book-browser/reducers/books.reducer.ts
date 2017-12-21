@@ -1,10 +1,7 @@
 import {createFeatureSelector, createSelector} from '@ngrx/store';
 import {BookActions, BooksActionTypes} from '../actions/books.actions';
+import {BooksState} from '../book-browser.module';
 import {Book} from '../models/book';
-
-export interface BooksState {
-  data: Book[];
-}
 
 const initState: Book[] = [];
 
@@ -13,7 +10,7 @@ export function booksReducer(state: Book[] = initState, action: BookActions): Bo
   switch (action.type) {
 
     case BooksActionTypes.LoadBooksSuccess:
-      return [...action.payload as Book[]];
+      return [...action.payload];
 
     default:
       return state;

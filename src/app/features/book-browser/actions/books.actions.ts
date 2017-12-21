@@ -9,10 +9,12 @@ export enum BooksActionTypes {
 
 export class LoadBooks implements Action {
   public type: string;
-  public payload: null;
+  public payload: any;
 
   constructor() {
     this.type = BooksActionTypes.LoadBooks;
+    this.payload = null;
+
   }
 }
 

@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {Store} from '@ngrx/store';
 import {LoadBooks} from '../actions/books.actions';
-import {BooksState} from '../reducers/books.reducer';
+import {BooksState} from '../book-browser.module';
 
 @Component({
   selector: 'book-browser',

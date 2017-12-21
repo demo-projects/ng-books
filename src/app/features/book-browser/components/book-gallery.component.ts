@@ -1,8 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 import {Store} from '@ngrx/store';
 import {Observable} from 'rxjs/Observable';
-import {mockBook, Book} from '../models/book';
-import {selectBooks, BooksState} from '../reducers/books.reducer';
+import {BooksState} from '../book-browser.module';
+import {Book} from '../models/book';
+import {selectBooks} from '../reducers/books.reducer';
 
 @Component({
   selector: 'book-gallery',
@@ -11,7 +12,7 @@ import {selectBooks, BooksState} from '../reducers/books.reducer';
       <div class="book" *ngFor="let book of books | async">
          <img src="{{book.volumeInfo.imageLinks.thumbnail}}"/>
         <span><strong>{{ book.volumeInfo.title }}</strong></span>
-         <p>{{ book.volumeInfo.subtitle }}</p>
+         <p>{{ book.volumeInfo.authors[0] }}</p>
       </div>
     </div>
   `,
